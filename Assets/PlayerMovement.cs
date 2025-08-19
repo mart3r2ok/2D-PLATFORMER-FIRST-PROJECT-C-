@@ -1,4 +1,5 @@
 using JetBrains.Annotations;
+using System.Threading;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -14,6 +15,8 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask groundLayer; // Layer for the ground
     public Transform groundCheck; // Transform to check if the player is grounded
     public float groundCheckRadius = 0.2f; // Radius for the ground check
+    public int Count = 0; // Counter for collecting items
+    public Win Win1; // Reference to the WinLogic script
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -29,12 +32,6 @@ public class PlayerMovement : MonoBehaviour
             Application.Quit();
             Debug.Log("Game Closed");
         }
-        /* if(gameObject.transform.position.y <= -9.559f || gameObject.transform.position.y >= 9.833f)
-        {
-            Debug.Log("Player went off the platform");
-            gameObject.transform.position = new Vector3(-20.817f, -7.949f, 0f);
-        }
-        */
         if (timer >= 0.5f)
         {
             timer = 0f; // Reset timer after logging
@@ -44,6 +41,7 @@ public class PlayerMovement : MonoBehaviour
             }
                 prev = now; // Update previous position
         }
+        Debug.Log(Count); // Log the current item count
     }
     void FixedUpdate()
     {
@@ -56,6 +54,13 @@ public class PlayerMovement : MonoBehaviour
         if ((Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) && isGrounded)
         {
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+        }
+    }
+    public void WinLogic()
+    {
+        if(Count == 5)
+        {
+            Win1.Winn(); // Call the Winn method from the WinLogic script
         }
     }
 }

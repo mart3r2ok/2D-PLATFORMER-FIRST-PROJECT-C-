@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 8474a42e0e957184fb0c29595ee92326
+guid: a28e7b7e1db1c7a4cbd7189b91d983db
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4859850883169687241
-    second: var2leftr_0
+      213: -8425465054085164265
+    second: pngimg.com - coin_PNG36871_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: var2leftr_0
+      name: pngimg.com - coin_PNG36871_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 3128
-        height: 1740
+        width: 512
+        height: 512
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7396d4fce575e8cb0800000000000000
-      internalID: -4859850883169687241
+      spriteID: 71359cf5c2cb21b80800000000000000
+      internalID: -8425465054085164265
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      var2leftr_0: -4859850883169687241
+      pngimg.com - coin_PNG36871_0: -8425465054085164265
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

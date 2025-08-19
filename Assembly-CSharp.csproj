@@ -61,13 +61,16 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.0.55f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Resolution.cs" />
     <Compile Include="Assets\TPtoHOME.cs" />
     <Compile Include="Assets\GAMEOVERLOGIC.cs" />
     <Compile Include="Assets\BlockMovementY.cs" />
+    <Compile Include="Assets\Win.cs" />
     <Compile Include="Assets\Respawn.cs" />
     <Compile Include="Assets\BlockMovementX.cs" />
     <Compile Include="Assets\PlayerMovement.cs" />
     <Compile Include="Assets\RetryButton.cs" />
+    <Compile Include="Assets\TakeMoney.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
