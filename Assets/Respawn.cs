@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class Respawn : MonoBehaviour
 {
+    public GameManager gameManager; // Reference to the GameManager script
     public Vector3 respawnPosition = new Vector3(-20.817f, -7.949f, 0f); // Default respawn position
     public Transform player; // Reference to the player object
     public PlayerMovement playermove;
@@ -13,6 +14,8 @@ public class Respawn : MonoBehaviour
             player.transform.position = respawnPosition; // Move player to respawn position
             --playermove.hp;
             gameoverlogic.Check(); // Call the check method to handle player health
+            --gameManager.Lives; // Decrement coins in the GameManager
+            gameManager.UpdateLivesUI(); // Update the UI to reflect the new lives count
         }
     }
     private void OnTriggerEnter2D(Collider2D other)
