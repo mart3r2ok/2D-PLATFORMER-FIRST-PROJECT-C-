@@ -1,4 +1,4 @@
-# My 2D Platformer
+# My First Unity Project - 2D Platformer
 > A simple **2D platformer** built with Unity.  
 > The player controls a character that can jump across platforms, avoid obstacles (saw), and collect coins, The player has to get 5 coins to win, he has only 3 lifes to do it.
 ## Screenshots
